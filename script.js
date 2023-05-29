@@ -10,4 +10,22 @@ function reRataPopulasi() {
 	} else {
 		document.querySelector("#hasil-rerata").innerHTML = rerata;
 	}
+
 }
+
+function proPorsi() {
+	var kuantitasX = document.querySelector("#kuantitasX").value;
+	var kuantitasN = document.querySelector("#kuantitasN").value;
+	var proporsi = kuantitasX / kuantitasN;
+
+	if (kuantitasX === "") {
+		alert("masukkan nilai X");
+	} else if (kuantitasN === "") {
+		alert("Masukkan nilai N");
+	} else {
+		document.querySelector("#hasil-proporsi").innerHTML = proporsi;
+	}
+
+}
+
+
